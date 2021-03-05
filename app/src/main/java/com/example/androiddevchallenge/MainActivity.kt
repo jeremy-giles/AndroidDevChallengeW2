@@ -19,7 +19,6 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.animateIntAsState
@@ -68,7 +67,7 @@ import com.example.androiddevchallenge.ui.theme.blue100
 import com.example.androiddevchallenge.ui.theme.orange500
 import com.example.androiddevchallenge.ui.theme.orange900
 
-@ExperimentalAnimationApi
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -81,7 +80,6 @@ class MainActivity : AppCompatActivity() {
 }
 
 // Start building your app here!
-@ExperimentalAnimationApi
 @Composable
 fun MyApp() {
     // Timer
@@ -366,7 +364,6 @@ fun MyApp() {
     }
 }
 
-@ExperimentalAnimationApi
 @Preview("Light Theme", widthDp = 360, heightDp = 640)
 @Composable
 fun LightPreview() {
@@ -375,7 +372,6 @@ fun LightPreview() {
     }
 }
 
-@ExperimentalAnimationApi
 @Preview("Dark Theme", widthDp = 360, heightDp = 640)
 @Composable
 fun DarkPreview() {
