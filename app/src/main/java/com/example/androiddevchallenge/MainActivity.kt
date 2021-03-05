@@ -183,7 +183,7 @@ fun MyApp() {
                     )
                 },
                 navigationIcon = {
-                    IconButton(onClick = { /*TODO*/ }) {
+                    IconButton(onClick = { }) {
                         Icon(
                             painter = painterResource(id = R.drawable.ic_tent),
                             contentDescription = "Menu"
