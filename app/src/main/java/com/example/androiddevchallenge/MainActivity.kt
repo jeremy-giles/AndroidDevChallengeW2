@@ -17,7 +17,6 @@ package com.example.androiddevchallenge
 
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.util.Log
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.animation.ExperimentalAnimationApi
@@ -107,7 +106,6 @@ fun MyApp() {
                     millisUntilFinished.toFloat() / (countdownBannerStart.value.toFloat())
                 progressBanner.value = value
                 timeLeftBanner.value = (millisUntilFinished / 1000).toInt()
-                Log.d("onTick", "${(progress.value * 10000) % 1000}")
             }
 
             override fun onFinish() {
@@ -137,9 +135,6 @@ fun MyApp() {
 
             timerBanner.start()
             timerBannerRunning.value = true
-
-            // progress.value = 1F
-            // timeLeft.value = (countdownStart.value / 1000)
         }
     }
 
