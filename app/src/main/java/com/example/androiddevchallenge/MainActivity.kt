@@ -67,7 +67,6 @@ import com.example.androiddevchallenge.ui.theme.blue100
 import com.example.androiddevchallenge.ui.theme.orange500
 import com.example.androiddevchallenge.ui.theme.orange900
 
-
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
